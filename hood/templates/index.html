@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container" >
+  <div class="row">
+    <h4 class="text-center">Stay Informed</h4>
+    <p class="text-center">Welcome to Mtaani, a web application that allows you to be in the loop about everything happening in your neighborhood. From contact information of different handyman to meeting announcements or even alerts. Check or Make Important announcements in the Notifications bar</p>
+  </div>
+</div>
+
+<style>
+  body{
+    background-image: url(https://images.pexels.com/photos/5253209/pexels-photo-5253209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+p,h4{
+  color: white;
+  margin-top: 50px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 25px;
+}
+.dark{
+  filter: brightness(85%);
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 540px;
+}
+.card img {
+  max-width: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  filter: brightness(50%);
+
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+</style>
+{% endblock %}
