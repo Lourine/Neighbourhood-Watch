@@ -93,8 +93,11 @@ class Authorities(models.Model):
 class Profile(models.Model):
     avatar = models.ImageField(upload_to='avatars/')
     username = models.ForeignKey(User,on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, default= 'user')
+    email = models.CharField(max_length=100, default='null')
     Location = models.CharField(max_length=200)
     neighbourhood = models.ForeignKey(neighbourhood,on_delete=models.CASCADE)
+    
     
     def __str__(self):
         return self.username
