@@ -131,7 +131,7 @@ def new_notification(request):
             notification.neighbourhood = profile.neighbourhood
             notification.save()
 
-         return HttpResponseRedirect('/notifications')
+        return HttpResponseRedirect('/notifications')
 
 
     else:
